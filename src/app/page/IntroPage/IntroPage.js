@@ -1,41 +1,37 @@
+import FlowingMenu from "@/app/FlowingMenu/FlowingMenu";
+import Background from "./background/Background";
+import "./IntroPage.css"; 
+import FadeContent from "@/app/FadeContent/FadeContent";
+import { SparklesText } from "@/components/ui/sparkles-text";
 const IntroPage = () => {
-    return (
-      <div
-        style={{
-          backgroundColor: "rgba(24, 24, 24, 1)",
-          position: "relative",
-          width: "100vw",
-          height: "100vh",
-        }}
-      >
-        <img
-          src="/img/img-background1.png"
-          alt="Intro background"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
-        <img
-          src="/img/001.png"
-          alt="Overlay graphic"
-          style={{
-            position: "absolute",
-            top: "50%",
-            right: "0%",
-            transform: "translate(-50%, -50%) rotate(-20deg)",
-            width: "300px", // adjust as needed
-          }}
-        />
-        <img
-        src="/img/002.png"
-        style={{
-            position: "absolute",
-            top: "20%",
-            right: "25%",
-            transform: "translate(-50%, -50%) rotate(10deg)",
-            width: "300px", // adjust as needed
-          }}/>
+  const demoItems = [
+    { link: 'about', text: 'about me', image: 'https://picsum.photos/600/400?random=1' },
+    { link: '#', text: 'PROJECT', image: 'https://picsum.photos/600/400?random=2' },
+    { link: '#', text: 'SKILL', image: 'https://picsum.photos/600/400?random=3' },
+    { link: '#', text: 'CONTACT', image: 'https://picsum.photos/600/400?random=4' }
+  ];
+  return (
+    <>
+      <Background/>
+      <div className="hero">
+      <div style={{ height: '160px', width:"100%",position: 'absolute', zIndex:"1",top:"0"}}>
+    <FlowingMenu items={demoItems} />
+    </div>  
+      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+      <div className="hero_top"> 
+          <h1>Jung Yong Joon</h1>
+        </div>
+        <div className="hero_mid">
+        <SparklesText text="Front-end"> 
+        </SparklesText>
+        </div>
+        <div className="hero_bottom">#Web .dev</div>
+        </FadeContent>
+  
       </div>
-    );
-  };
-  
-  export default IntroPage;
-  
+       
+    </>
+  );
+};
+
+export default IntroPage;

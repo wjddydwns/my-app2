@@ -1,9 +1,13 @@
-export default {
+// next.config.mjs
+
+const nextConfig = {
+  output: 'export',
+
+  basePath: '/my-app2',       // ✅ 꼭 넣어야 함
+  assetPrefix: '/my-app2',    // ✅ 같이 넣어야 함
+
   images: {
-    domains: [
-      'images.unsplash.com',
-      'assets.aceternity.com' // ✅ 이 도메인을 꼭 추가하세요!
-    ],
+    domains: ['images.unsplash.com', 'assets.aceternity.com'],
   },
   webpack(config) {
     config.module.rules.push({
@@ -13,3 +17,5 @@ export default {
     return config;
   },
 };
+
+export default nextConfig;

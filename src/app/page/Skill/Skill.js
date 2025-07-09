@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { GradientHeading } from "@/components/ui/gradient-heading";
-import { LogoCarousel } from "@/components/ui/logo-carousel";
+import { GradientHeading } from "../../../components/ui/gradient-heading";
+import { LogoCarousel } from "../../../components/ui/logo-carousel";
 
 function AppleIcon(props) {
   return (

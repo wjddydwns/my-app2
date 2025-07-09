@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import { GradientHeading } from "@/components/ui/gradient-heading";
+import { Carousel, Card } from "../../../components/ui/apple-cards-carousel";
+import { GradientHeading } from "../../../components/ui/gradient-heading";
 
 export function ProjectPage() {
   const cards = data.map((card, index) => (

@@ -21,7 +21,20 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    // !!! 여기서부터 중요 !!!
+    "baseUrl": "./", // <-- compilerOptions 안에 위치해야 합니다.
+    "paths": {
+      "@/components/*": ["src/app/components/*"],
+      "@/ui/*": ["src/components/ui/*"],
+      "@/layout/*": ["src/app/components/layout/*"],
+      "@/styles/*": ["src/styles/*"],
+      // 여기에 @/lib/* 경로도 추가해야 합니다.
+      // lib 폴더가 src 폴더 안에 있다면:
+      "@/lib/*": ["lib/*"]
+      // lib 폴더가 프로젝트 루트에 있다면:
+      // "@/lib/*": ["lib/*"]
+    }
   },
   "include": [
     "next-env.d.ts",

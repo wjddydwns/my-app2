@@ -2,8 +2,8 @@
 import { NavbarDemo } from "../../Top_menu/NavbarDemo";
 import Background from "./background/Background";
 import "./IntroPage.css"; 
-import FadeContent from "@/app/FadeContent/FadeContent";
-import { SparklesText } from "@/components/ui/sparkles-text";
+import FadeContent from "../../../app/FadeContent/FadeContent";
+import { SparklesText } from "../../../components/ui/sparkles-text";
 import { useEffect, useState } from "react";
 const IntroPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

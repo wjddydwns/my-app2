@@ -22,7 +22,7 @@ import {
   World,
 } from "matter-js";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/app/lib/utils"
 
 import SVGPathCommander from 'svg-path-commander';
 

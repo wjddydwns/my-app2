@@ -62,7 +62,6 @@ Next.js와 React.js를 활용한 웹사이트 구축 역량을 보유하고 있�
           </div>
           <div className='Education'>
             <h3>Education <WiStars size={50}/></h3>
-            2023~2025 (가천대학교)
             202506~ing (우리 FISA)
           </div>
           <div className='Project'>

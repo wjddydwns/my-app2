@@ -1,40 +1,78 @@
 import React from 'react'
 import './about.css'
-import Education from './\bEdu/Education';
+import { FaBirthdayCake } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaGithubSquare } from "react-icons/fa";
+import { IoLogoReact } from "react-icons/io5";
+import { FaJs } from "react-icons/fa6";
+import { SiSpring } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { WiStars } from "react-icons/wi";
+
+
+
+
+
+
 
 const About = () => {
   return (
     <section className="about-section">
 
       <div className='about_box'>
-      <h2 className="section-title">ABOUT ME</h2>
-      <div className="about-grid">
-  <div className="grid-item item1">
-    <div className="spline_box">
-      <img src='/img/profile.jpg'/>
-    </div>
-  </div>
-  <div className="grid-item item2">
-   <Education/>
-  </div>
-  <div className="grid-item item3">
-     <div className="about-textbox">
-      <p>
-        <strong>Next.js</strong>와 <strong>React.js</strong>를 활용한 웹사이트 구축 역량을 보유하고 있으며, 프론트엔드 개발자로서 <span className="highlight">사용자 경험(UX)</span> 개선에 깊은 관심을 가지고 있습니다.
-      </p>
-      <p>
-        또한, <strong>MERN 스택</strong>을 기반으로 한 백엔드 경험을 통해 데이터 흐름에 대한 이해도를 바탕으로 <span className="highlight">완성도 높은 웹 서비스</span>를 구현하고 있습니다.
-      </p>
-      <p>
-        직관적이고 원활한 사용자 경험을 제공하는 것을 목표로 <strong>UI/UX 디자인</strong>에 중점을 두며, 사용자 친화적인 인터페이스를 구축하는 데 집중하고 있습니다.
-      </p>
-    </div>
-    
-  </div>
-</div>
+        <div className='left_box'>
 
+          <div className='profile'></div>
+
+          <div className='contact'>
+            <h3>CONTACT <WiStars size={50}/></h3>
+            
+            <div style={{width:"350px",display:"flex",flexDirection:"column",}} >
+              <div style={{display:"flex",flexDirection:"row",justifyContent:"flex-start"}}><FaBirthdayCake style={{marginRight:"20px"}}/>2001.02.22<br/></div>
+              <div style={{display:"flex",flexDirection:"row",justifyContent:"flex-start"}}><MdEmail style={{marginRight:"20px"}}/>wjddydwns159@gmail.com<br/></div>
+              <div style={{display:"flex",flexDirection:"row",justifyContent:"flex-start"}}><FaGithubSquare style={{marginRight:"20px"}}/>https://www.github.wjddydwns159.com</div>
+            </div>
+          </div>
+
+          <div className='skill'>
+            <h3>TECHNICAL SKILLS <WiStars size={50}/></h3>
+            <div style={{width:"350px",display:"flex",flexDirection:"row",justifyContent:"space-around"}}>
+              <IoLogoReact size={50}/>
+              <FaJs size={50}/>
+              <SiSpring size={50}/> 
+              <SiMysql size={50}/>
+            </div>
+  
+          </div>
+          <div className='Language'>
+            <h3>Language <WiStars size={50}/></h3>
+            <div style={{width:"350px",display:"flex",flexDirection:"row",justifyContent:"flex-start"}}>
+          <a>KOREAN, JAPANESE</a>
+          </div>
+          </div>
+        </div>
+        <div className='right_box'>
+          <div className='about_me'>
+            <h3>ABOUT ME <WiStars size={50}/></h3>
+            <h1>디자인을 사랑하는 개발자</h1>
+              <div>
+Next.js와 React.js를 활용한 웹사이트 구축 역량을 보유하고 있으며, 프론트엔드 개발자로서 사용자 경험(UX)을 개선하는 데 큰 관심이 있습니다. 또한, 웹의 데이터 흐름을 깊이 이해하기 위해 백엔드 경험도 보유하고 있으며, MERN 스택을 활용한 개발 경험이 있습니다.
+직관적이고 원활한 사용자 경험을 제공하는 것을 목표로 디자인과 UI/UX에 중점을 두고 있으며, 사용자 친화적인 인터페이스를 구현하는 데 집중하고 있습니다.
+            </div>
+          </div>
+          <div className='Education'>
+            <h3>Education <WiStars size={50}/></h3>
+            2023~2025 (가천대학교)
+            202506~ing (우리 FISA)
+          </div>
+          <div className='Project'>
+            <h3>Project 추후 추가 예정 <WiStars size={50}/></h3>
+          </div>
+  
+      
       </div>
-      <img 
+      </div>
+      {/* <img 
   src="/img/003.png" 
   style={{
     position: 'relative',   // ✅ 중요
@@ -45,8 +83,7 @@ const About = () => {
     width: '50%',
     height: 'auto',
     pointerEvents: 'none'   // ✅ 이 설정은 이미지가 클릭 방해하지 않게 함
-  }} 
-/>
+  }}  */}
   </section>
   
   )

@@ -67,3 +67,27 @@
     font-size: 90px;
     rotate: -20deg;
 }
+
+
+/* header css */
+.upBtn,
+.titleBtn {
+
+
+    opacity: 1; /* 요소 보이기 */
+    transition: opacity 0.5s ease; /* 부드러운 효과 트랜지션 추가 */
+}
+
+.titleBtn.active,
+.upBtn.active{
+    position: fixed;
+	
+    opacity: 0; /* 초기에 투명하게 설정 */
+    transition: 0.5s ease;
+    
+}
+.navbarDemo{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    font-weight: bold;
+}

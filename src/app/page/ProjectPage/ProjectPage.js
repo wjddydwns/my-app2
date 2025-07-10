@@ -34,7 +34,7 @@ const DummyContent_1= () => {
             </p>
             <br/>
             <Image
-              src="/img/pj_img/main.png"
+              src="/img/pj_img/main.webp"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
@@ -61,7 +61,7 @@ const DummyContent_2= () => {
             </p>
             <br/>
             <Image
-              src="/img/pj_img/nstore.png"
+              src="/img/pj_img/nstore.webp"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
@@ -93,7 +93,7 @@ const DummyContent_3= () => {
             </p>
             <br/>
             <Image
-              src="/img/pj_img/platform.png"
+              src="/img/pj_img/platform.webp"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
@@ -109,19 +109,19 @@ const data = [
   {
     category: "FE",
     title: "Netflix-Clone",
-    src: "/img/pj_img/netflix.png",
+    src: "/img/pj_img/netflix.webp",
     content: <DummyContent_1 />,
   },
   {
     category: "FullStack",
     title: "N-store Demo.",
-    src:'/img/pj_img/nstore.png',
+    src:'/img/pj_img/nstore.webp',
     content: <DummyContent_2 />,
   },
   {
     category: "FE & Planning",
     title: "농상물 플렛폼",
-    src:"/img/pj_img/platform.png",
+    src:"/img/pj_img/platform.webp",
     content: <DummyContent_3 />,
   },
 

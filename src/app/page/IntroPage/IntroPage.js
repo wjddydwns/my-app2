@@ -29,7 +29,7 @@ const IntroPage = () => {
           <NavbarDemo/>
     </div>  
 
-      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+      {/* <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}> */}
       <div className="hero_top"> 
           <h1>Jung Yong Joon</h1>
         </div>
@@ -38,7 +38,7 @@ const IntroPage = () => {
         </SparklesText>
         </div>
         <div className="hero_bottom">#Web .dev</div>
-        </FadeContent>
+        {/* </FadeContent> */}
   
       </div>
        

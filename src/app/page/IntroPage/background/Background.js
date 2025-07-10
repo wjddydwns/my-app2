@@ -11,7 +11,7 @@ const Background = () => {
       }}
     >
       <img
-        src="/img/img-background1.png"
+        src="/img/img-background1.webp"
         alt="Intro background"
         style={{
           width: "100%",
@@ -21,7 +21,7 @@ const Background = () => {
         }}
       />
       <img
-        src="/img/paint.png"
+        src="/img/paint.webp"
         style={{
           width: "100%",
           height: "100%",
@@ -30,7 +30,7 @@ const Background = () => {
         }}
       />
       <img
-        src="/img/001.png"
+        src="/img/001.webp"
         alt="Overlay graphic"
         style={{
           position: "absolute",
@@ -41,7 +41,7 @@ const Background = () => {
         }}
       />
       <img
-        src="/img/002.png"
+        src="/img/002.webp"
         style={{
           position: "absolute",
           top: "20%",
